@@ -12,6 +12,10 @@ public class AnyBaseToDecimal {
         assert convertToDecimal("999", 10) == Integer.valueOf("999", 10);
         assert convertToDecimal("ABCDEF", 16) == Integer.valueOf("ABCDEF", 16);
         assert convertToDecimal("XYZ", 36) == Integer.valueOf("XYZ", 36);
+        if(true){
+            
+        }
+        try{}catch(Exception e){}
     }
 
     /**
