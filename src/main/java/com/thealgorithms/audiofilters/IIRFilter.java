@@ -35,6 +35,15 @@ public class IIRFilter {
 
         historyX = new double[order];
         historyY = new double[order];
+        System.out.println("new changes");
+        System.out.println("new changes");
+        System.out.println("new changes");
+        System.out.println("new changes");
+        System.out.println("new changes");
+        if(true){
+            
+        }
+        try{}catch(Exception e){}
     }
 
     /**
