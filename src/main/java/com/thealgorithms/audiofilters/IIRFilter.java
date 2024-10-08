@@ -93,7 +93,8 @@ public class IIRFilter {
                 System.out.println("Exception: " + e.getMessage());
             }
         }
-
+        System.out.println("sample: " + sample);
+        System.out.println("result: " + result);
         historyX[0] = sample;
         historyY[0] = result;
 
