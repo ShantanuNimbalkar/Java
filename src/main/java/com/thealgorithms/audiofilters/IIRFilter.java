@@ -1,5 +1,7 @@
 package com.thealgorithms.audiofilters;
 
+import java.io.IOException;
+
 /**
  * N-Order IIR Filter Assumes inputs are normalized to [-1, 1]
  *
@@ -91,6 +93,13 @@ public class IIRFilter {
         System.out.println("sample = " + sample);
         System.out.println("result = " + result);
         System.out.println("sample = " + sample);
+
+        // added empty try
+        try {
+
+        } catch (IOException e) {
+            System.out.println("Exception" + e.getMessage());
+        }
 
         return result;
     }
