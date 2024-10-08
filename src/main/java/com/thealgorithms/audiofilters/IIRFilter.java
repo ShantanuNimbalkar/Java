@@ -1,5 +1,8 @@
 package com.thealgorithms.audiofilters;
 
+import java.io.File;
+import java.io.IOException;
+
 /**
  * N-Order IIR Filter Assumes inputs are normalized to [-1, 1]
  *
@@ -43,7 +46,8 @@ public class IIRFilter {
      * @param aCoeffs Denominator coefficients
      * @param bCoeffs Numerator coefficients
      * @throws IllegalArgumentException if {@code aCoeffs} or {@code bCoeffs} is
-     * not of size {@code order}, or if {@code aCoeffs[0]} is 0.0
+     *                                  not of size {@code order}, or if
+     *                                  {@code aCoeffs[0]} is 0.0
      */
     public void setCoeffs(double[] aCoeffs, double[] bCoeffs) throws IllegalArgumentException {
         if (aCoeffs.length != order) {
@@ -83,6 +87,11 @@ public class IIRFilter {
         for (int i = order - 1; i > 0; i--) {
             historyX[i] = historyX[i - 1];
             historyY[i] = historyY[i - 1];
+            try {
+                File f = new File("/user/repo/dir");
+            } catch (IOException e) {
+                System.out.println("Exception: " + e.getMessage());
+            }
         }
 
         historyX[0] = sample;
