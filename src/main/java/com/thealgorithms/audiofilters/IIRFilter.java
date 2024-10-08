@@ -43,7 +43,8 @@ public class IIRFilter {
      * @param aCoeffs Denominator coefficients
      * @param bCoeffs Numerator coefficients
      * @throws IllegalArgumentException if {@code aCoeffs} or {@code bCoeffs} is
-     * not of size {@code order}, or if {@code aCoeffs[0]} is 0.0
+     *                                  not of size {@code order}, or if
+     *                                  {@code aCoeffs[0]} is 0.0
      */
     public void setCoeffs(double[] aCoeffs, double[] bCoeffs) throws IllegalArgumentException {
         if (aCoeffs.length != order) {
@@ -87,6 +88,9 @@ public class IIRFilter {
 
         historyX[0] = sample;
         historyY[0] = result;
+        System.out.println("sample = " + sample);
+        System.out.println("result = " + result);
+        System.out.println("sample = " + sample);
 
         return result;
     }
