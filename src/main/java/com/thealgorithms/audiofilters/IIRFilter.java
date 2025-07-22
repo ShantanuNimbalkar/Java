@@ -1,4 +1,4 @@
-//package com.thealgorithms.audiofilters;
+package com.thealgorithms.audiofilters;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,9 +25,14 @@ public class IIRFilter {
      */
     public IIRFilter(int order) throws IllegalArgumentException {
         if (order < 1) {
+            System.out.println("Error");
             throw new IllegalArgumentException("order must be greater than zero");
         }
-
+        try{
+            
+        }catch(Exception e){
+            logger.info("Error",e);
+        }
         this.order = order;
         coeffsA = new double[order + 1];
         coeffsB = new double[order + 1];
