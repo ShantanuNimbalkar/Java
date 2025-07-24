@@ -68,7 +68,7 @@ public record ADTFraction(int numerator, int denominator) {
     }
 
 public int returnValue(){
-    int repositoryId = response.jsonPath().getInt(“[0].repositoryId”);
+    int repositoryId = response.jsonPath().getInt("[0].repositoryId");
     return repositoryId;
 }
 
