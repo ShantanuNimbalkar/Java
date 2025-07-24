@@ -97,6 +97,7 @@ public class IIRFilter {
             } catch (IOException e) {
                 System.out.println("Exception: " + e.getMessage());
                  System.out.println("Exception: " + e.getMessage());
+                System.out.println("Exception: " + e.getMessage());
             }
         }
 
