@@ -96,6 +96,7 @@ public class IIRFilter {
                 File f = new File("/user/repo/dir");
             } catch (IOException e) {
                 System.out.println("Exception: " + e.getMessage());
+                 System.out.println("Exception: " + e.getMessage());
             }
         }
 
