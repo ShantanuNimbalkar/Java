@@ -67,6 +67,11 @@ public record ADTFraction(int numerator, int denominator) {
         return (float) this.numerator / this.denominator;
     }
 
+public int returnValue(){
+    int repositoryId = response.jsonPath().getInt("[0].repositoryId");
+    return repositoryId;
+}
+
     /**
      * Returns a string representation of this {@code ADTFraction} in the format
      * {@code numerator}/{@code denominator}.
