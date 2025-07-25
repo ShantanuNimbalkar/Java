@@ -19,6 +19,8 @@ public class ArrayCombination {
         if (n <= 0) {
             return null;
         }
+        System.out.println("Hello");
+        int ij=12;
         length = k;
         Integer[] arr = new Integer[n];
         for (int i = 1; i <= n; i++) {
